@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate Article NLP</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amita&family=Montserrat:wght@500&family=Orbitron:wght@500&family=Red+Hat+Display&family=Viaoda+Libre&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <div class="center">
+                <h1>Evaluate a News Article with Natural Language Processing (NLP)</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="txt_field" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Enter URL Here">
+                    <input id="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            <section>
+
+            <section class="results">
+                <strong>Sentiment Analysis Results:</strong>
+                <div class="analysis">
+                    <div id="agreement"></div>
+                    <div id="confidence"></div>
+                    <div id="irony"></div>
+                    <div id="score_tag"></div>
+                    <div id="subjectivity"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2021 Abhishek Kumar. All rights reserved.</p>
+        </footer>
+        
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+    
+</html>
