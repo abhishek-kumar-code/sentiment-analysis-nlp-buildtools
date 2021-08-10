@@ -76,7 +76,7 @@ Command | Action
 `npm run build-dev` | Build project
 `npm run start` | Run project
 
-7. Open browser at http://localhost:3031/
+7. Open browser at http://localhost:8080/
 
 ## Credits
 [Front End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011)
