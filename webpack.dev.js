@@ -13,6 +13,12 @@ module.exports = {
     },
     mode: 'development',
     devtool: 'source-map',
+    devServer:{
+        watchOptions:{
+          poll: true
+        },
+        port: 8080,
+      },
     module: {
         rules: [
             {
