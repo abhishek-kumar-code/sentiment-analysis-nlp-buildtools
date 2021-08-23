@@ -69,12 +69,6 @@ Command | Action
 `npm run build-prod` | Build project
 `npm run start` | Run project
 
-OR
-
-Command | Action
-:------------: | :-------------:
-`npm run build-dev` | Build project
-`npm run start` | Run project
 
 7. Open browser at http://localhost:8080/
 
