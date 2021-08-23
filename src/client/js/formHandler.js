@@ -3,17 +3,21 @@ function handleSubmit(event) {
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
-
-    console.log(formText);
+    
+    console.log("URL entered by the user: " + formText);
+    // check the validity of the URL
+    if(Client.validURL(formText) === true) {
 
     postData('http://localhost:8080/addURL', {userURL: formText})
     .then(function(res) {
         updateUI(res)
     });
 
-    Client.checkForName(formText)
-
     console.log("::: Form Submitted :::")
+  }
+  else{
+    alert("WARNING! This is not a valid URL. Please try again.");
+  }
 }
 
 export { handleSubmit }
